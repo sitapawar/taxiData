@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Yellow Taxi – March 1, 2025</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 48px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .graph {
+      margin-bottom: 48px;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      margin-top: 12px;
+      border-radius: 6px;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #aaa;
+      text-align: center;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚖 NYC Yellow Taxi Data – March 1, 2025</h1>
+  <p>This page showcases visualizations from a sample of NYC yellow taxi trips, including temporal patterns and geographic movement. Data provided by the Taxi and Limousine Commission (TLC).</p>
+
+  <div class="graph">
+    <h2>📊 Trip Volume by Hour</h2>
+    <img src="graph1.1.png" alt="Trip Volume by Hour"/>
+    <div class="caption">Hourly pickup trends from midnight to midnight.</div>
+  </div>
+
+  <div class="graph">
+    <h2>🗺️ Trip Paths Across the City</h2>
+    <img src="graph2.png" alt="Trip Line Paths"/>
+    <div class="caption">Each line connects the centroid of the pickup and dropoff zone.</div>
+  </div>
+
+  <div class="graph">
+    <h2>🌈 Trip Distances (Color-Scaled)</h2>
+    <img src="graph3.png" alt="Trip Distance Colored Lines"/>
+    <div class="caption">Color intensity reflects the great-circle distance of the trip.</div>
+  </div>
+
+  <footer>
+    Data Source: NYC Taxi & Limousine Commission · Built with R & HTML
+  </footer>
+
+</body>
+</html>
